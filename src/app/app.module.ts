@@ -5,6 +5,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 // Modules
 import { MaterialModule } from './material.module';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { PrescripionStatusPipe } from './pipes/prescription-status/prescription-status.pipe';
@@ -23,7 +24,8 @@ import { FooterComponent } from './components/footer/footer/footer.component';
         BrowserAnimationsModule,
         MaterialModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        AppRoutingModule
     ],
     declarations: [
         AppComponent,
