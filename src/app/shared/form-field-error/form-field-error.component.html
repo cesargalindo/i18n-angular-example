@@ -1,0 +1,37 @@
+<!-- Required -->
+<div i18n="@@form-field-error-c_required" *ngIf="formElement.errors?.required; else not_required_error_template">
+    Required
+</div>
+
+<!-- All other errors besides Required -->
+<ng-template #not_required_error_template>
+
+    <!-- Min Value -->
+    <div *ngIf="formElement.errors?.min" i18n="@@form-field-error-c_minValue">
+        Min value is {{ formElement.errors?.min?.min }}
+    </div>
+
+    <!-- Max Value -->
+    <div *ngIf="formElement.errors?.max">
+        Max value is {{ formElement.errors?.max?.max }}
+    </div>
+
+    <!-- Two Decimals values exceeded -->
+    <div *ngIf="formElement.errors?.twoDecimal">
+        Exceeded two decimals digits.
+    </div>
+
+    <!-- Integer Only Values -->
+    <div *ngIf="formElement.errors?.integerOnly">
+        No decimals values allowed.
+    </div>
+
+    <div *ngIf="formElement.errors?.alphaNumericOnly">
+        Only letters and numbers allowed.
+    </div>
+
+    <div *ngIf="formElement.errors?.minlength" i18n="@@form-field-error-c_minLength">
+        At least {{ formElement.errors?.minlength.requiredLength }} are required.
+    </div>
+
+</ng-template>

@@ -1,0 +1,70 @@
+<div class="flex-container-center">
+    <form [formGroup]="mainForm" (ngSubmit)="submit()">
+        <br /><br />
+
+        <mat-form-field appearance="fill" class="input-field">
+            <mat-label i18n="@@input-field-c_label_fullName">Full Name</mat-label>
+            <input
+                i18n="@@input-field-c_input_fullName"
+                matInput
+                [formControl]="fullName"
+                maxlength="60"
+                type="text"
+                [attr.aria-invalid]="fullName?.invalid"
+                aria-describedby="fullName"
+                placeholder="enter full name" />
+
+            <mat-error>
+                <app-form-field-error [formElement]="fullName" [fieldName]="'Full Name'"> </app-form-field-error>
+            </mat-error>
+
+        </mat-form-field>
+
+        <br /><br />
+
+        <mat-form-field appearance="fill">
+            <mat-label i18n="@@input-field-c_label_gender">Gender</mat-label>
+            <mat-select [formControl]="gender" multiple>
+                <mat-select-trigger i18n="@@input-field-c_matSelectGender">
+                    {{gender.value ? gender.value[0] : ''}}
+                    <span *ngIf="gender.value?.length > 1" class="example-additional-selection">
+                        (+{{gender.value.length - 1}} {{gender.value?.length === 2 ? 'other' : 'others'}})
+                    </span>
+                </mat-select-trigger>
+                <mat-option i18n="@@input-field-c_matOptionGender" *ngFor="let gender of genderList" [value]="gender">{gender, select, Male {Male} Female {Female} Other {Other}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-error>
+            <app-form-field-error [formElement]="gender" [fieldName]="'Gender'"> </app-form-field-error>
+        </mat-error>
+
+        <br /><br />
+
+        <label i18n="@@input-field-c_radioLabel" id="example-radio-group-label">Pick your favorite season &nbsp;</label>
+        <mat-radio-group aria-labelledby="example-radio-group-label"
+            [formControl]="favoriteSeason">
+            <mat-radio-button i18n="@@input-field-c_radioButton" *ngFor="let season of seasons" [value]="season">
+                {season, select, Winter {Winter} Spring {Spring} Summer {Summer} Autumn {Autumn}}
+            </mat-radio-button>
+        </mat-radio-group>
+
+        <mat-error>
+            <app-form-field-error [formElement]="favoriteSeason" [fieldName]="'Favorite Season'"> </app-form-field-error>
+        </mat-error>
+
+        <br /><br />
+
+        <p>
+            <button
+                i18n=loginButton
+                mat-raised-button
+                color="primary">{{ loginButton }}
+            </button>
+        </p>
+    </form>
+
+</div>
+
+<hr/>
+{{ mainForm.value | json }}

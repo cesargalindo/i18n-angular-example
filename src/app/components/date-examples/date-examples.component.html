@@ -1,0 +1,14 @@
+<br><br>
+<h2 i18n="@@date-examples_H2Header">Date stuff</h2>
+
+<!-- output is 'Jun 15, 2015' -->
+{{ date1 | date }} <br/>
+
+<!-- output is 'Jun 15, 2015, 9:43:11 PM' -->
+{{ date1 | date:'medium' }} <br/>
+
+<!-- output is 'EEEE, MMMM d, y'	Monday, June 15, 2015 -->
+{{ date1 | date:'fullDate' }} <br/>
+
+<!-- output is 'EEEE, MMMM d, y, h:mm:ss a zzzz'	Monday, June 15, 2015 at 9:03:01 AM GMT+01:00 -->
+{{ date1 | date:'full' }} <br/>

@@ -1,0 +1,107 @@
+<br><br>
+
+<h2 i18n="@@pipe-examples-c_pipeH2">Pipe stuff</h2>
+
+<p>
+    <button
+        i18n=changeMessageButton
+        mat-raised-button
+        color="primary"
+        (click)="messageYClick()">{{changeMessageButton}}
+    </button>
+</p>
+
+<hr />
+
+<h3 i18n="@@pipe-examples-c_pipeH3Red" class="red">Can NOT localize</h3>
+
+<span i18n="@@pipe-examples_span1">
+    <!-- WARN: This is not localizable -->
+    {{ (prescriptionStatus1 == PrescriptionStatus.CREATED) ? 'Continue Draft Registration' : 'Add New Registration' }}
+</span>
+
+<br />
+<hr />
+
+<h3 i18n="@@pipe-examples-c_pipeH3Green" class="green">Works, we can localize</h3>
+
+<p>
+    <!-- pass a variable using $localize, WARN: but variable itself is not localized -->
+    <span i18n="@@pipe-examples-c_passVariable"> {{passVariable}} ==== </span>
+
+    <!-- GOOD: this custom pipe is localized -->
+    <span i18n="prescriptionStatus1 | prescriptionStatus"> {{prescriptionStatus1 | prescriptionStatus}} </span>
+    __
+    <span> {{prescriptionStatus1 | prescriptionStatus}} </span>
+    __
+    <span> {{ test2 }} </span>
+
+</p>
+
+<hr />
+
+<!-- works with select -->
+<!-- NOTE: values CANCELED, CREATED, COMPLETE must be hardcoded, passing in as variables does not work -->
+<span i18n="@@pipe-examples-c_registrationStatus">
+    {prescriptionStatus1, select,
+    CANCELED { Registration Status: CANCELED }
+    CREATED { Registration status: CREATED }
+    COMPLETE { Registration status: COMPLETE }
+    }
+</span>
+
+<br /><br />
+
+<!-- WARN: works with select - but code will need to be duplicated in each instance Continue .. and Add .. buttons are used -->
+<span i18n="@@pipe-examples-c_pluralWorks2">
+    {(prescriptionStatus1 == PrescriptionStatus.CREATED), select,
+    true {Continue Draft Registration}
+    false {Add New Registration}}
+</span>
+
+<br /><br />
+
+<!-- TODO: button names are more resuable with this approach -->
+<ng-container *ngIf="(prescriptionStatus1 == PrescriptionStatus.CREATED); else other_button">
+    <span i18n=continueDraftReg> {{continueDraftReg}} </span>
+</ng-container>
+<ng-template #other_button>
+    <span i18n=addNewReg> {{ addNewReg }} </span>
+</ng-template>
+
+<br /><br />
+
+<p>
+    <button
+        i18n=toggleStatusButton
+        mat-raised-button
+        color="primary"
+        (click)="toggleStatus()">{{toggleStatusButton}}
+    </button>
+</p>
+
+<hr />
+
+<h3 i18n="@@pipe-examples-c_amendedMessageTitle" class="green">Amended Message Pipe</h3>
+
+<div i18n="@@pipe-examples-c_testAmendedPipe1"> Amended {{ testAmended1 | amendedMessage}} </div>
+<div> {{ testAmended2 | amendedMessage}} </div>
+<div> {{ testAmended3 | amendedMessage}} </div>
+
+<hr />
+
+<p>
+    <button
+        i18n="loginButton"
+        mat-raised-button
+        color="primary">{{loginButton}}
+    </button>
+</p>
+
+<p>
+    <button
+        i18n=submitButton
+        mat-raised-button
+        color="primary">{{submitButton}}
+    </button>
+</p>

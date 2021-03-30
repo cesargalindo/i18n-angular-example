@@ -1,0 +1,39 @@
+<h1>
+    <span i18n="User welcome|An introduction header for this sample@@introductionHeader">
+        Hello Stranger!
+    </span>
+
+    &nbsp;&nbsp; -- &nbsp;&nbsp; <span>{{ titleService.dynamicTitle }}</span>
+</h1>
+
+<ng-container i18n=@@root-c_container_test>I don't output any element</ng-container>
+&nbsp; &nbsp;
+<b>{{ xmessage }} - {{ titleService.ymessage }} </b>
+
+<br />
+
+<mat-tab-group [selectedIndex]="tabSelected" (selectedIndexChange)="newTabSelected($event)">
+
+    <!-- ERROR: not allowed,  -->
+    <!-- Cannot mark an element as translatable inside of a translatable section. Please remove the nested i18n marker. -->
+    <!-- <mat-tab i18n="@@app-component_tab1" label="Plurals"> -->
+
+    <mat-tab i18n="@@root-c_tab1" i18n-label="@@root-c_tab1_label" label="Plurals Clicks">
+        <app-plurals-clicks></app-plurals-clicks>
+    </mat-tab>
+    <mat-tab i18n="@@root-c_tab2" i18n-label="@@root-c_tab2_label" label="Custom Pipes">
+        <app-pipe-examples></app-pipe-examples>
+    </mat-tab>
+    <mat-tab i18n="@@root-c_tab3" i18n-label="@@root-c_tab3_label" label="Date Pipe">
+        <app-date-examples></app-date-examples>
+    </mat-tab>
+    <mat-tab i18n="@@root-c_tab4" i18n-label="@@root-c_tab4_label" label="Input Fields">
+        <app-input-field></app-input-field>
+    </mat-tab>
+</mat-tab-group>
+
+<br/>
+<hr />
+<br/>
+
+<app-footer></app-footer>
