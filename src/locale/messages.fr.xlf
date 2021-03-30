@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-us" datatype="plaintext" original="ng2.template">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="introductionHeader" datatype="html">
         <source> Hello Stranger! </source>
@@ -124,7 +124,7 @@
         </context-group>
       </trans-unit>
 
-    <trans-unit id="footer-c_en-us" datatype="html">
+    <trans-unit id="footer-c_en-US" datatype="html">
         <source>US English</source>
         <target>Anglais américain</target>
         <context-group purpose="location">
