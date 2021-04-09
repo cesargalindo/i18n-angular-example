@@ -25,7 +25,7 @@
         <source>Plurals Clicks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="root-c_tab1" datatype="html">
@@ -33,7 +33,7 @@
         <source><x id="START_TAG_APP_PLURALS_CLICKS" ctype="x-app_plurals_clicks" equiv-text="&amp;lt;app-plurals-clicks&amp;gt;"/><x id="CLOSE_TAG_APP_PLURALS_CLICKS" ctype="x-app_plurals_clicks" equiv-text="&amp;lt;/app-plurals-clicks&amp;gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="root-c_tab2_label" datatype="html">
@@ -41,7 +41,7 @@
         <source>Custom Pipes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="root-c_tab2" datatype="html">
@@ -49,7 +49,7 @@
         <source><x id="START_TAG_APP_PIPE_EXAMPLES" ctype="x-app_pipe_examples" equiv-text="&amp;lt;app-pipe-examples&amp;gt;"/><x id="CLOSE_TAG_APP_PIPE_EXAMPLES" ctype="x-app_pipe_examples" equiv-text="&amp;lt;/app-pipe-examples&amp;gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="root-c_tab3_label" datatype="html">
@@ -57,7 +57,7 @@
         <source>Date Pipe</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="root-c_tab3" datatype="html">
@@ -65,7 +65,7 @@
         <source><x id="START_TAG_APP_DATE_EXAMPLES" ctype="x-app_date_examples" equiv-text="&amp;lt;app-date-examples&amp;gt;"/><x id="CLOSE_TAG_APP_DATE_EXAMPLES" ctype="x-app_date_examples" equiv-text="&amp;lt;/app-date-examples&amp;gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="root-c_tab4_label" datatype="html">
@@ -73,7 +73,7 @@
         <source>Input Fields</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="root-c_tab4" datatype="html">
@@ -81,7 +81,23 @@
         <source><x id="START_TAG_APP_INPUT_FIELD" ctype="x-app_input_field" equiv-text="&amp;lt;app-input-field&amp;gt;"/><x id="CLOSE_TAG_APP_INPUT_FIELD" ctype="x-app_input_field" equiv-text="&amp;lt;/app-input-field&amp;gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="root-c_tab5_label" datatype="html">
+        <target>その他</target>
+        <source>Other</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="root-c_tab5" datatype="html">
+        <target><x id="START_TAG_APP_OTHER" ctype="x-app_other" equiv-text="&amp;lt;app-other&amp;gt;"/><x id="CLOSE_TAG_APP_OTHER" ctype="x-app_other" equiv-text="&amp;lt;/app-other&amp;gt;"/></target>
+        <source><x id="START_TAG_APP_OTHER" ctype="x-app_other" equiv-text="&amp;lt;app-other&amp;gt;"/><x id="CLOSE_TAG_APP_OTHER" ctype="x-app_other" equiv-text="&amp;lt;/app-other&amp;gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="xmessage" datatype="html">
@@ -185,7 +201,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="input-field-c_matOptionGender" datatype="html">
-        <target>{VAR_SELECT、select、男性{男性}女性{女性}その他{その他}}</target>
+        <target>{VAR_SELECT, select, Male {男性} Female {女性} Other {その他}}</target>
         <source>{VAR_SELECT, select, Male {Male} Female {Female} Other {Other}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/input-field/input-field.component.html</context>
@@ -201,7 +217,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="2165755995442681782" datatype="html">
-        <target>{VAR_SELECT、select、Winter {Winter}春{Spring}夏{Summer}秋{Autumn}}</target>
+        <target>{VAR_SELECT, select, Winter {冬} Spring {春} Summer {夏} Autumn {秋}}</target>
         <source>{VAR_SELECT, select, Winter {Winter} Spring {Spring} Summer {Summer} Autumn {Autumn}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/input-field/input-field.component.html</context>
@@ -209,10 +225,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="input-field-c_radioButton" datatype="html">
-        <target> <x id="ICU" equiv-text="{season, select, Winter {Winter} Spring {Spring} Summer {Summer} Autumn {Autumn}}
-            "/> </target>
-        <source> <x id="ICU" equiv-text="{season, select, Winter {Winter} Spring {Spring} Summer {Summer} Autumn {Autumn}}
-            "/> </source>
+        <target> <x id="ICU" equiv-text="{season, select, Winter {Winter} Spring {Spring} Summer {Summer} Autumn {Autumn}}"/> </target>
+        <source> <x id="ICU" equiv-text="{season, select, Winter {Winter} Spring {Spring} Summer {Summer} Autumn {Autumn}}"/> </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/input-field/input-field.component.html</context>
           <context context-type="linenumber">48,49</context>
@@ -241,7 +255,66 @@
           <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.html</context>
           <context context-type="linenumber">105,106</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.html</context>
+          <context context-type="linenumber">113,114</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
         <note priority="1" from="description">loginButton</note>
+      </trans-unit>
+      <trans-unit id="7158987712047083824" datatype="html">
+        <target><x id="INTERPOLATION" equiv-text="{{ IButtons[ButtonNames.CHANGE_MESSAGE].name }}"/>
+</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ IButtons[ButtonNames.CHANGE_MESSAGE].name }}"/>
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/other/other/other.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/plurals-clicks/plurals-clicks.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <note priority="1" from="description">IButtons[ButtonNames.CHANGE_MESSAGE].name</note>
+      </trans-unit>
+      <trans-unit id="Other-RegComplete" datatype="html">
+        <target>登録完了</target>
+        <source>Registration Complete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Other-RegUpdated" datatype="html">
+        <target>登録が更新されました</target>
+        <source>Registration Updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Other-RegDraftSaved" datatype="html">
+        <target>登録ドラフトを保存しました</target>
+        <source>Registration Draft Saved</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Other-RegDraftUpdated" datatype="html">
+        <target>登録ドラフトが更新されました</target>
+        <source>Registration Draft Updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="pipe-examples-c_pipeH2" datatype="html">
         <target>パイプのもの</target>
@@ -296,7 +369,7 @@
         <note priority="1" from="meaning">prescriptionStatus1 </note>
       </trans-unit>
       <trans-unit id="9146285584674073048" datatype="html">
-        <target>{VAR_SELECT、select、CANCELED {登録ステータス：CANCELED} CREATED {登録ステータス：CREATED} COMPLETE {登録ステータス：COMPLETE}}</target>
+        <target>{VAR_SELECT, select, CANCELED {登録ステータス：キャンセル済み} CREATED {登録ステータス：CREATED} COMPLETE {登録ステータス：COMPLETE}}</target>
         <source>{VAR_SELECT, select, CANCELED {Registration Status: CANCELED } CREATED {Registration status: CREATED } COMPLETE {Registration status: COMPLETE }}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.html</context>
@@ -308,15 +381,13 @@
     CANCELED { Registration Status: CANCELED }
     CREATED { Registration status: CREATED }
     COMPLETE { Registration status: COMPLETE }
-    }
-"/>
+    }"/>
 </target>
         <source> <x id="ICU" equiv-text="{prescriptionStatus1, select,
     CANCELED { Registration Status: CANCELED }
     CREATED { Registration status: CREATED }
     COMPLETE { Registration status: COMPLETE }
-    }
-"/>
+    }"/>
 </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.html</context>
@@ -324,7 +395,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3263390946586798911" datatype="html">
-        <target>{VAR_SELECT、select、true {ドラフト登録を続行} false {新しい登録を追加}}</target>
+        <target>{VAR_SELECT, select, true {ドラフト登録を続行} false {新規登録を追加}}</target>
         <source>{VAR_SELECT, select, true {Continue Draft Registration} false {Add New Registration}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.html</context>
@@ -334,13 +405,11 @@
       <trans-unit id="pipe-examples-c_pluralWorks2" datatype="html">
         <target> <x id="ICU" equiv-text="{(prescriptionStatus1 == PrescriptionStatus.CREATED), select,
     true {Continue Draft Registration}
-    false {Add New Registration}}
-"/>
+    false {Add New Registration}}"/>
 </target>
         <source> <x id="ICU" equiv-text="{(prescriptionStatus1 == PrescriptionStatus.CREATED), select,
     true {Continue Draft Registration}
-    false {Add New Registration}}
-"/>
+    false {Add New Registration}}"/>
 </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.html</context>
@@ -381,15 +450,15 @@
         <source> Text text <x id="INTERPOLATION" equiv-text="this.prescriptionStatus1"/> another text</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.ts</context>
-          <context context-type="linenumber">46</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.ts</context>
           <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/pipe-examples/pipe-examples.component.ts</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="angular-logo-id" datatype="html">
@@ -425,7 +494,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="7670372064920373295" datatype="html">
-        <target>{VAR_SELECT、select、male {male} female {female} other {other}}</target>
+        <target>{VAR_SELECT, select, male {男性} female {女性} other {その他}}</target>
         <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/plurals-clicks/plurals-clicks.component.html</context>
@@ -436,14 +505,12 @@
         <target>更新しました：<x id="ICU" equiv-text="{minutes, plural,
   =0 {just now}
   =1 {one minute ago}
-  other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}
-"/>
+  other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}"/>
 </target>
         <source>Updated: <x id="ICU" equiv-text="{minutes, plural,
   =0 {just now}
   =1 {one minute ago}
-  other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}
-"/>
+  other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}"/>
 </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/plurals-clicks/plurals-clicks.component.html</context>
@@ -457,17 +524,6 @@
           <context context-type="sourcefile">src/app/components/plurals-clicks/plurals-clicks.component.html</context>
           <context context-type="linenumber">10,13</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="7158987712047083824" datatype="html">
-        <target><x id="INTERPOLATION" equiv-text="{{changeMessageButton}}"/>
-</target>
-        <source><x id="INTERPOLATION" equiv-text="{{changeMessageButton}}"/>
-</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/plurals-clicks/plurals-clicks.component.html</context>
-          <context context-type="linenumber">22,23</context>
-        </context-group>
-        <note priority="1" from="description">changeMessageButton</note>
       </trans-unit>
       <trans-unit id="loginButton" datatype="html">
         <target>ログイン</target>

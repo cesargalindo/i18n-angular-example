@@ -16,6 +16,7 @@ import { InputFieldComponent } from './components/input-field/input-field.compon
 import { FormFieldErrorComponent } from './shared/form-field-error/form-field-error.component';
 import { AmendedMessagePipe } from './pipes/amended-message/amended-message.pipe';
 import { FooterComponent } from './components/footer/footer/footer.component';
+import { OtherComponent } from './components/other/other/other.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { FooterComponent } from './components/footer/footer/footer.component';
         InputFieldComponent,
         FormFieldErrorComponent,
         AmendedMessagePipe,
-        FooterComponent
+        FooterComponent,
+        OtherComponent
     ],
     providers: [
         PrescripionStatusPipe,

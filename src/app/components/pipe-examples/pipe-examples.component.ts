@@ -20,7 +20,12 @@ export class PipeExamplesComponent implements OnInit {
 
     passVariable: string;
 
+    public IButtons = IButtons;
+    public ButtonNames = ButtonNames;
+
+    // WARN: this does not work
     // public submitButton = $localize`:@@submitbutton:Submit`;
+    
     public submitButton = IButtons[ButtonNames.SUBMIT].name;
     public loginButton = IButtons[ButtonNames.LOGIN].name;
     public changeMessageButton = IButtons[ButtonNames.CHANGE_MESSAGE].name;
