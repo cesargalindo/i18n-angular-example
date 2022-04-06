@@ -136,6 +136,14 @@
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="943819305991048305" datatype="html">
+        <target>===ダッシュボードは機能します！ ===</target>
+        <source>=== dashboard works! ===</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="date-examples_H2Header" datatype="html">
         <target>日付のもの</target>
         <source>Date stuff</source>
@@ -174,6 +182,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer/footer.component.html</context>
           <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer-c_dashboard" datatype="html">
+        <target>ダッシュボード</target>
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer/footer.component.html</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="input-field-c_label_fullName" datatype="html">
@@ -289,7 +305,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Other-RegUpdated" datatype="html">
@@ -297,7 +313,7 @@
         <source>Registration Updated</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Other-RegDraftSaved" datatype="html">
@@ -305,7 +321,7 @@
         <source>Registration Draft Saved</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Other-RegDraftUpdated" datatype="html">
@@ -313,7 +329,7 @@
         <source>Registration Draft Updated</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/other/other/other.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pipe-examples-c_pipeH2" datatype="html">
@@ -464,6 +480,14 @@
       <trans-unit id="angular-logo-id" datatype="html">
         <target>Angularロゴ</target>
         <source>Angular logo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/plurals-clicks/plurals-clicks.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ang-alt-logo" datatype="html">
+        <target>角のあるロゴ</target>
+        <source>angular logo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/plurals-clicks/plurals-clicks.component.html</context>
           <context context-type="linenumber">1</context>

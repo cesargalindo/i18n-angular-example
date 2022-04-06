@@ -17,6 +17,7 @@ import { FormFieldErrorComponent } from './shared/form-field-error/form-field-er
 import { AmendedMessagePipe } from './pipes/amended-message/amended-message.pipe';
 import { FooterComponent } from './components/footer/footer/footer.component';
 import { OtherComponent } from './components/other/other/other.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { OtherComponent } from './components/other/other/other.component';
         FormFieldErrorComponent,
         AmendedMessagePipe,
         FooterComponent,
-        OtherComponent
+        OtherComponent,
+        DashboardComponent
     ],
     providers: [
         PrescripionStatusPipe,
